@@ -1,0 +1,5 @@
+Error: Bad value ./Imagen Prueba.png for attribute src on element img: Illegal character in path segment: space is not allowed.
+
+From line 58, column 13; to line 58, column 86
+
+          <img src="./Imagen Prueba.png" alt="Foto de perfil" class="profile-image">↩     
