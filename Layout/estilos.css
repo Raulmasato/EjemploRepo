@@ -14,7 +14,6 @@
 }
 
 #menu {
-    display: none; /* Elimino el menu */
     float: right;
     width: 15%;
     background-color: #e0e0e0;
@@ -35,6 +34,7 @@
 }
 
 #pie {
+    display: none; /* Elimino el pie*/
     background-color: #f0f0f0;
     padding: 10px;
     margin-top: 10px;
