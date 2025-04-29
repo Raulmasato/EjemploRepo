@@ -1,0 +1,41 @@
+/* Estilos base para la estructura inicial */
+#contenedor {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+#cabecera {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+#menu {
+    float: left;
+    width: 15%;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 200px;
+}
+
+#contenido {
+    float: left;
+    width: 80%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    min-height: 200px;
+}
+
+#pie {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px sol #cc1212;
+    clear: both;
+}
