@@ -14,7 +14,8 @@
 }
 
 #menu {
-    float: right; /* Cambiado de left a right */
+    display: none; /* Elimino el menu */
+    float: right;
     width: 15%;
     background-color: #e0e0e0;
     padding: 10px;
@@ -24,11 +25,11 @@
 
 #contenido {
     float: left;
-    width: 75%; /* Reducido ligeramente para dar espacio al menú */
+    width: 75%; 
     background-color: #f8f8f8;
     padding: 10px;
-    margin-right: 10px; /* Agregado margen derecho en lugar de izquierdo */
-    margin-left: 0; /* Eliminado margen izquierdo */
+    margin-right: 10px; 
+    margin-left: 0; 
     border: 1px solid #ccc;
     min-height: 200px;
 }
