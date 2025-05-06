@@ -1,0 +1,82 @@
+/* General */
+body {
+    padding-top: 56px; /* altura navbar */
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Colores personalizados */
+.bg-purple {
+    background-color: #6f42c1 !important;
+}
+
+.text-purple {
+    color: #6f42c1 !important;
+}
+
+/* Sección inicio - Hero */
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: url('../img/background.jpg') center/cover no-repeat;
+    position: relative;
+    color: white;
+}
+
+/* Overlay para el hero */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+#inicio .container {
+    z-index: 2;
+}
+
+/* Animación cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tarjetas de proyectos */
+.project-card {
+    overflow: hidden;
+    height: 100%;
+}
+
+.project-card img {
+    transition: transform 0.5s ease;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+    #inicio {
+        min-height: auto;
+        padding-top: 2rem;
+    }
+    
+    .hero {
+        text-align: center;
+        padding: 60px 0;
+    }
+}
