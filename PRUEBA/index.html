@@ -2,66 +2,65 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Revista Escolar</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="container">
+    <!-- Header de la revista -->
+    <header class="header">
+      <div class="header-meta">
+        <span class="issue">NÚMERO 31</span>
+        <span class="date">NOVIEMBRE 2025</span>
+      </div>
+      <h1 class="site-title">Título</h1>
+      <p class="school-name">Nombre del colegio</p>
+    </header>
 
-  <header class="header">
-    <div class="header-meta">
-      <span class="issue">Número 31</span>
-      <span class="date">Noviembre de 2025</span>
-    </div>
-    <h1 class="site-title">Título</h1>
-    <p class="school-name">Nombre del colegio</p>
-  </header>
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <!-- Sección lateral - En este número -->
+      <aside class="sidebar">
+        <h2 class="sidebar-header">En este número</h2>
+        
+        <article class="sidebar-article">
+          <h3>Título del artículo 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+        </article>
+        
+        <article class="sidebar-article">
+          <h3>Título del artículo 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+        </article>
+        
+        <article class="sidebar-article">
+          <h3>Título del artículo 4</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+        </article>
+        
+        <div class="table-contents">
+          <h3>Tabla de contenido:</h3>
+          <ul>
+            <li>Sección 1 - p.2</li>
+            <li>Sección 2 - p.3</li>
+            <li>Sección 3 - p.5</li>
+            <li>Sección 4 - p.7</li>
+          </ul>
+        </div>
+      </aside>
 
-  <main class="container">
-    <aside class="sidebar">
-      <h2 class="sidebar-title">En este número</h2>
-      <nav class="toc">
-        <ul>
-          <li>
-            <h3>Título del artículo 2</h3>
-            <p>Lead, breve explicación del contenido del artículo. Exprésalo aquí.</p>
-          </li>
-          <li>
-            <h3>Título del artículo 3</h3>
-            <p>Lead, breve explicación del contenido del artículo. Exprésalo aquí.</p>
-          </li>
-          <li>
-            <h3>Título del artículo 4</h3>
-            <p>Lead, breve explicación del contenido del artículo. Exprésalo aquí.</p>
-          </li>
-        </ul>
-      </nav>
-      <section class="toc-list">
-        <h3>Tabla de contenido</h3>
-        <ul>
-          <li>Índice artículo 1 – p. 1</li>
-          <li>Índice artículo 2 – p. 2</li>
-          <li>Índice artículo 3 – p. 3</li>
-          <li>Índice artículo 4 – p. 4</li>
-        </ul>
-      </section>
-    </aside>
-
-    <section class="main-content">
-      <figure class="hero">
-        <img src="https://via.placeholder.com/600x300" alt="Niños en clase">
-      </figure>
-      <article class="article">
+      <!-- Artículo principal -->
+      <section class="main-article">
+        <img src="/api/placeholder/400/320" alt="Estudiantes en el aula" class="main-article-image">
         <h2>Titular del artículo principal</h2>
-        <p>Escribe aquí el texto del lead, que es una síntesis de la idea principal de la información en no más de 25 palabras. Sirve para enganchar al lector. Escribe el texto aquí. Escribe el texto aquí. Escribe el texto aquí.</p>
-        <p>Aquí otro párrafo con <strong>énfasis</strong>, <em>cursiva</em> y un <a href="https://www.ejemplo.com" target="_blank">link a otro sitio</a>. También podemos <u>subrayar</u> palabras.</p>
-      </article>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© 2025 Revista Escolar</p>
-  </footer>
-
+        <div class="main-article-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, ipsum vitae ultrices tincidunt, nisi ipsum ultrices nisi, in feugiat nisi nisl sit amet mauris. <strong>Donec euismod</strong>, ipsum vitae ultrices tincidunt, nisi ipsum ultrices nisi, in feugiat nisi nisl sit amet mauris.</p>
+          <p>Donec euismod, ipsum vitae ultrices tincidunt, nisi ipsum <em>ultrices nisi</em>, in feugiat nisi nisl sit amet mauris. Donec euismod, ipsum vitae ultrices tincidunt, nisi ipsum ultrices nisi, in feugiat nisi nisl <u>sit amet mauris</u>.</p>
+        </div>
+        <a href="#" class="read-more">Leer más</a>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
