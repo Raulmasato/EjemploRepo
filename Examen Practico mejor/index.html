@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de caudal en una tubería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de caudal en una tubería</h1>
+
+    <div class="form-group">
+        <label for="caudal">Elegir tipo de cálculo:</label>
+        <select id="caudal">
+            <option value="">-- Seleccione una opción --</option>
+            <option value="1">Caudal para sección general</option>
+            <option value="2">Caudal para tubería circular</option>
+            <option value="3">Caudal para tubería rectangular</option>
+        </select>
+    </div>
+
+    <div class="validation-summary hidden" id="validationSummary">
+        <h3>Errores de validación:</h3>
+        <ul id="errorList"></ul>
+    </div>
+
+    <fieldset id="CaudalGeneral" style="display: none;">
+        <legend>Caudal para sección general</legend>
+        <label>
+            Velocidad <span class="units">(m/s)</span>: 
+            <input type="number" id="V1" step="any" placeholder="Ej: 2.5" min="0">
+            <span class="error-message" id="V1-error"></span>
+        </label>
+        <label>
+            Área de la sección <span class="units">(m²)</span>: 
+            <input type="number" id="S1" step="any" placeholder="Ej: 0.5" min="0">
+            <span class="error-message" id="S1-error"></span>
+        </label>
+        <p><small><strong>Fórmula:</strong> Q = V × A</small></p>
+    </fieldset>
+
+    <fieldset id="CaudalCircular" style="display: none;">
+        <legend>Caudal para tubería circular</legend>
+        <label>
+            Velocidad <span class="units">(m/s)</span>: 
+            <input type="number" id="V2" step="any" placeholder="Ej: 1.8" min="0">
+            <span class="error-message" id="V2-error"></span>
+        </label>
+        <label>
+            Diámetro <span class="units">(m)</span>: 
+            <input type="number" id="D1" step="any" placeholder="Ej: 0.3" min="0">
+            <span class="error-message" id="D1-error"></span>
+        </label>
+        <p><small><strong>Fórmula:</strong> Q = V × (π × D²)/4</small></p>
+    </fieldset>
+
+    <fieldset id="CaudalRectangular" style="display: none;">
+        <legend>Caudal para tubería rectangular</legend>
+        <label>
+            Velocidad <span class="units">(m/s)</span>: 
+            <input type="number" id="V3" step="any" placeholder="Ej: 2.0" min="0">
+            <span class="error-message" id="V3-error"></span>
+        </label>
+        <label>
+            Lado A <span class="units">(m)</span>: 
+            <input type="number" id="A1" step="any" placeholder="Ej: 0.4" min="0">
+            <span class="error-message" id="A1-error"></span>
+        </label>
+        <label>
+            Lado B <span class="units">(m)</span>: 
+            <input type="number" id="B1" step="any" placeholder="Ej: 0.6" min="0">
+            <span class="error-message" id="B1-error"></span>
+        </label>
+        <p><small><strong>Fórmula:</strong> Q = V × A × B</small></p>
+    </fieldset>
+
+    <button id="btnCalcular" disabled>Calcular Caudal</button>
+
+    <div id="resultado" style="display:none;">
+        <strong>Resultado:</strong> <span id="valor"></span> <span class="units">m³/s</span>
+        <br><small id="resultadoDetalle"></small>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
