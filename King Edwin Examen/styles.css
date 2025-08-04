@@ -1,0 +1,62 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 2rem;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="number"] {
+    width: 4rem;
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+select {
+    padding: 0.25rem;
+    margin-left: 0.5rem;
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: white;
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(64, 64, 207);
+    color: white;
+    border-radius: 4px;
+}
+
+#resultado {
+    margin-top: 1rem;
+    font-weight: bold;
+    background: #e0ffe0;
+    padding: 0.75rem;
+    border: 1px solid rgb(13, 219, 13);
+    display: inline-block;
+}

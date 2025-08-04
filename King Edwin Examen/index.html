@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de caudal en una tubería</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Calculadora de caudal en una tubería</h1>
+
+  <div class="form-group">
+    <label for="caudal">Elegir caudal:</label>
+    <select id="caudal">
+      <option value="1">Caudal para sección</option>
+      <option value="2">Caudal para tubería circular</option>
+      <option value="3">Caudal para tubería rectangular</option>
+    </select>
+  </div>
+
+  <fieldset id="CaudalCircular">
+    <legend>Caudal para sección</legend>
+    <label>Velocidad: <input type="number" id="V1" step="any" placeholder="v"></label>
+    <label>Sección: <input type="number" id="S1" step="any" placeholder="S"></label>
+  </fieldset>
+
+  <fieldset id="CaudalRectangular" style="display: none;">
+    <legend>Caudal para tubería circular</legend>
+    <label>Velocidad: <input type="number" id="V2" step="any" placeholder="v"></label>
+    <label>Diámetro: <input type="number" id="D1" step="any" placeholder="D"></label>
+  </fieldset>
+
+  <fieldset id="CaudalSeccion" style="display: none;">
+    <legend>Caudal para tubería rectangular</legend>
+    <label>Velocidad: <input type="number" id="V3" step="any" placeholder="v"></label>
+    <label>Lado a: <input type="number" id="A1" step="any" placeholder="a"></label>
+    <label>Lado b: <input type="number" id="B1" step="any" placeholder="b"></label>
+  </fieldset>
+
+  <button id="btnCalcular">Calcular Caudal</button>
+
+  <div id="resultado" style="display:none;">
+    Resultado: <span id="valor"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
